@@ -25,6 +25,7 @@ func (runner *Runner) Setup() error {
 		Params: map[string]string{
 			"charset":   "utf8",
 			"parseTime": "True",
+			"maxAllowedPacket": "41943040",
 		},
 	}
 	dbConn, err := sql.Open("mysql", dbConfig.FormatDSN())
