@@ -23,7 +23,7 @@ func (runner *Runner) Setup() error {
 		Addr:            "127.0.0.1:3306",
 		MultiStatements: true,
 		Params: map[string]string{
-			"charset":   "utf8",
+			"charset":   "utf8mb4",
 			"parseTime": "True",
 			"maxAllowedPacket": "41943040",
 		},
