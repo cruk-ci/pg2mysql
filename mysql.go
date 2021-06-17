@@ -22,8 +22,9 @@ func NewMySQLDB(
 		Addr:            fmt.Sprintf("%s:%d", host, port),
 		MultiStatements: true,
 		Params: map[string]string{
-			"charset":   "utf8",
-			"parseTime": "True",
+			"charset":   "utf8mb4",
+            		"parseTime": "True",
+            		"maxAllowedPacket": "41943040",
 		},
 	}
 
