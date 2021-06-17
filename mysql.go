@@ -24,7 +24,7 @@ func NewMySQLDB(
 		Params: map[string]string{
 			"charset":   "utf8mb4",
             		"parseTime": "True",
-            		"maxAllowedPacket": "41943040",
+            		"maxAllowedPacket": "83886080",
 		},
 	}
 
